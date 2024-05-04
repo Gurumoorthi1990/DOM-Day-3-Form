@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form submission</title>
+  <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap'); </style>
+
+</head>
+<body>
+ <div class="container">
+  <p id="description">Short description : This Project is Dom manipulation with form.</p>
+  <h1 id="title">Reg Form</h1>
+
+  <div class="form-group">
+  <form action="" id="form">
+    <label class ="form-field" for="firstName">First name</label>
+  <input class ="form-field" type="text" placeholder="Fill your  first name here" id="firstName">
+
+  <label class ="form-field" for="lastName">Last name</label>
+  <input class ="form-field" type="text" placeholder="Fill your last name here" id="lastName">
+
+  <label class ="form-field" for="adress">adress</label>
+<input class ="form-field" type="text" placeholder="Fill your adress here" id="adress">
+
+<label class ="form-field" for="pincode">pincode</label>
+<input class ="form-field" type="text" placeholder="your area pincode number" id="pincode">
+
+<label class ="form-field" for="gender">Gender</label>
+<select class ="form-field" name="gender" id="gender">
+  <option value="">-Select Gender-</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Other">Other</option>
+</select>
+
+<label class ="form-field" for="food">Choice Of Food</label>
+<select class ="form-field" name="food" id="food">
+  <option value="">Choice Of Food</option>
+  <option value="Idly">Idly</option>
+  <option value="Dhosa">Dhosa</option>
+  <option value="Meals">Meals</option>
+  <option value="Briyani">Briyani</option>
+  <option value="Parotta">Parotta</option>
+</select>
+
+<label class ="form-field" for="state">State</label>
+<input class ="form-field" type="text" placeholder="Fill your state name here" id="state">
+
+<label class ="form-field" for="country">Country</label>
+<input class ="form-field" type="text" placeholder="fill your Country name here" id="country">
+
+<button class ="form-field" type="submit" id="submit">submit</button>
+</form>
+</div>
+
+<table class="table">
+  <thead>
+  <tr>
+  <th>First name</th>
+  <th>Last name</th>
+  <th>Adress</th>
+  <th>Pincode</th>
+  <th>Gender</th>
+  <th>Choice Of Food</th>
+  <th>State</th>
+  <th>Country</th>
+</tr>
+</thead>
+<tbody>
+
+</tbody>
+
+</table>
+</div>
+</body>
+<script src="script.js"></script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+
+</html>
